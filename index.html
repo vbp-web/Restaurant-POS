@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant POS Desktop - The Ultimate Management System</title>
+    <meta name="description"
+        content="A comprehensive, production-ready Point of Sale (POS) system for restaurants with subscription-based monetization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Restro<span class="highlight">POS</span></div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="https://drive.google.com/uc?export=download&id=1Kl4fawh0yxCD8tsi1jp14ITwbUGVevMy"
+                        class="btn btn-secondary download-btn-nav" target="_blank" rel="noopener noreferrer"><i
+                            class="fas fa-download"></i> Download</a></li>
+                <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-background">
+            <img src="images/hero.png" alt="Hero Background">
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>The Future of <span class="gradient-text">Restaurant Management</span></h1>
+                <p>A comprehensive, production-ready Point of Sale (POS) system designed for modern restaurants. Built
+                    with Electron, React, and Node.js.</p>
+                <div class="hero-btns">
+                    <a href="#pricing" class="btn btn-primary">View Pricing <i class="fas fa-arrow-right"></i></a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Image Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>See It In Action</h2>
+                <p>Explore our powerful features through screenshots</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="images/1.jpg" alt="Screenshot 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/2.jpg" alt="Screenshot 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/3.jpg" alt="Screenshot 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/4.jpg" alt="Screenshot 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/5.jpg" alt="Screenshot 5">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/6.jpg" alt="Screenshot 6">
+                    </div>
+                </div>
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Everything you need to run your restaurant efficiently.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-desktop"></i></div>
+                    <h3>Desktop Native</h3>
+                    <p>Built with Electron for a seamless native experience on Windows, macOS, and Linux.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-qrcode"></i></div>
+                    <h3>QR Ordering</h3>
+                    <p>Customers can scan QR codes at their tables to view menus and place orders instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Live dashboards for revenue tracking, popular items, and staff performance metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-users-cog"></i></div>
+                    <h3>Staff Management</h3>
+                    <p>Role-based access control for Managers, Waiters, Kitchen Staff, and Cashiers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-chair"></i></div>
+                    <h3>Table Management</h3>
+                    <p>Visual table layout to track availability, occupied seats, and reservations in real-time.</p>
+                </div>
+                <!-- Subscription -->
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Smart Billing</h3>
+                    <p>Automated GST/tax calculations, invoice generation, and Razorpay integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built with Modern Tech</h2>
+                <p>Leveraging the latest technologies for performance and reliability.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React 18</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-atom"></i>
+                    <span>Electron</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Socket.io</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="download-cta">
+
+                <a href="https://drive.google.com/uc?export=download&id=1Kl4fawh0yxCD8tsi1jp14ITwbUGVevMy"
+                    class="btn btn-gradient btn-large" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Download RestroPOS Desktop
+                </a>
+                <p class="badge">Restaurant POS 1.0.0 Now Available</p>
+                <p class="cta-subtitle">Available for Windows </p>
+            </div>
+            <div class="section-header">
+                <h2>Flexible Pricing Plans</h2>
+                <p>Choose the perfect plan for your restaurant's size and needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">₹0<span>/month</span></div>
+                        <p>Perfect for trying out</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 Tables</li>
+                        <li><i class="fas fa-check"></i> 20 Menu Items</li>
+                        <li><i class="fas fa-check"></i> 2 Staff Members</li>
+                        <li><i class="fas fa-check"></i> 100 Orders/Month</li>
+                        <li><i class="fas fa-check"></i> QR Code Ordering</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Invoice Generation</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Start Free Trial</a>
+                </div>
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">₹999<span>/month</span></div>
+                        <p>For small cafes</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 20 Tables</li>
+                        <li><i class="fas fa-check"></i> 100 Menu Items</li>
+                        <li><i class="fas fa-check"></i> 10 Staff Members</li>
+                        <li><i class="fas fa-check"></i> 1,000 Orders/Month</li>
+                        <li><i class="fas fa-check"></i> Invoice Generation</li>
+                        <li><i class="fas fa-check"></i> Kitchen Display</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Choose Basic</a>
+                </div>
+                <!-- Pro Plan -->
+                <div class="pricing-card popular">
+
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">₹2,499<span>/month</span></div>
+                        <p>For growing restaurants</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 50 Tables</li>
+                        <li><i class="fas fa-check"></i> 500 Menu Items</li>
+                        <li><i class="fas fa-check"></i> 30 Staff Members</li>
+                        <li><i class="fas fa-check"></i> 10,000 Orders/Month</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                    </ul>
+                    <a href="#" class="btn btn-gradient">Choose Pro</a>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">₹4,999<span>/month</span></div>
+                        <p>For large chains</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Tables</li>
+                        <li><i class="fas fa-check"></i> Unlimited Items</li>
+                        <li><i class="fas fa-check"></i> Unlimited Staff</li>
+                        <li><i class="fas fa-check"></i> Unlimited Orders</li>
+                        <li><i class="fas fa-check"></i> Custom Branding</li>
+                        <li><i class="fas fa-check"></i> API Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About RestroPOS</h2>
+                <p>Our Story & Mission</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Transforming Restaurant Management</h3>
+                    <p>RestroPOS is a comprehensive, production-ready Point of Sale (POS) system designed specifically
+                        for modern restaurants. Built with cutting-edge technologies like Electron, React, and Node.js,
+                        we provide a seamless native desktop experience that works across Windows, macOS, and Linux.</p>
+
+                    <h3>Why We Built This</h3>
+                    <p>We understand the challenges restaurant owners face daily - from managing orders and inventory to
+                        tracking staff performance and analyzing sales data. That's why we created RestroPOS: a
+                        powerful, all-in-one solution that simplifies restaurant operations while providing the insights
+                        you need to grow your business.</p>
+
+                    <h3>Our Commitment</h3>
+                    <p>We're committed to continuous innovation and providing exceptional support to our customers. With
+                        features like QR ordering, real-time analytics, smart billing, and subscription-based pricing,
+                        we make professional restaurant management accessible to businesses of all sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo">Restro<span class="highlight">POS</span></div>
+                <p>The ultimate solution for modern restaurant management.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#tech-stack">Tech Stack</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="mailto:prajapativansh804@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>prajapativansh804@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Restaurant POS Desktop. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
